@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Manage Startups</title>
+
+	 	<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="startup.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	 <!-- Navigation Bar Start -->
+
+<nav class="navbar navbar-expand-sm">
+    <div class="container">
+
+   		<a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" width="110px" height="27px">
+   		</a>
+
+   		<button class="navbar-toggler bg-light navbar-light" data-toggle="collapse"  data-target="#thetarget"> 
+      		<span class="navbar-toggler-icon">  </span>
+   		</button>
+
+		<div class="collapse navbar-collapse" id="thetarget">
+  			<ul class="navbar-nav text-center ml-auto">
+
+    			<li class="nav-item">
+      				<a class="nav-link text-dark" href="#" style="margin-left:30px">home </a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link text-dark" href="#" style="margin-left:30px">services </a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link text-dark" href="#" style="margin-left:30px">about </a>
+    			</li>
+     			<li class="nav-item">
+      				<a class="nav-link text-dark" href="#" style="margin-left:30px">contact </a>
+    			</li>
+
+  			</ul>
+		</div> 
+
+    </div>
+</nav>			
+
+
+ <!-- Navigation Bar Ends -->
+
+ <!--Side Bar Start-->
+
+<div class="sidenav">
+  	<ul id="list">
+    	<li ><a href="cohort.html"><i class="fa fa-home"  id="list"></i>Manage Cohorts</a></li>
+        <li class="active"><a href="#"><i class="fa fa-tasks" id="list"></i>Manage Startups</a></li>
+        <li><a href="deliverable.html"><i class="fa fa-bar-chart" id="list"></i>Deliverables</span></a></li>
+        <li><a href="attendance.html"><i class="fa fa-user" id="list"></i>Attendance</a></li>
+    </ul>
+</div>
+
+ <!--Side Bar End-->
+
+
+ <!--Main Page Starts Here-->
+
+ <!--Manage Cohort - Start -->
+<div>
+	<h1 id="manage1">Manage Startups</h1> 
+
+	<div class="dropdown" id="btn-addcoh">
+  		<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    	Select Cohort
+  		</button>
+  		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    		<a class="dropdown-item" href="#">1st Cohort</a>
+    		<a class="dropdown-item" href="#">2nd Cohort</a>
+    		<a class="dropdown-item" href="#">3rd Cohort</a>
+  		</div>
+	</div>
+
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modalstartup" id="add_cohort1">Add Startup
+  	</button>
+</div>
+ <!--Manage Cohort - End -->
+
+
+<!-- Modal Starts Here-->
+
+  <!--Add Startup The Modal -->
+  <div  class="modal fade" id="Modalstartup">
+    <div class="modal-dialog modal-dialog-center">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header login-header">
+          	<h4 class="modal-title">Add Startup</h4>
+          	<button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          	<input type="name" placeholder="Startup Name" name="Startup Name">
+          	<textarea placeholder="One Line Pitch" name="Pitch" cols="48" rows="3"> </textarea>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          	<button type="button" class="btn btn-primary" data-dismiss="modal" id="exit">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="save">Save</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<!-- Add Startup Modal Ends Here-->
+
+
+
+<div id="main" >
+	<div class="user-dashboard">
+
+        <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#startup" id="desktopButton">
+
+        	<h4>Meetway</h4> 
+        
+  			<div id="startup" class="collapse">
+  				<h4 style="display: inline-block; float: left;">Team</h4> 
+  				<div style="float: right;"  class="btn btn-primary" data-toggle="modal" data-target="#Modalmember">Add Member</div>
+  				<div class="table-responsive">
+	  				<table class="table">
+	 					<tr>
+	    					<th style="min-width:150px">Name</th>
+	    					<th style="min-width:150px">Father Name</th>
+	    					<th>Email</th>
+	    					<th style="min-width:300px">Address</th>
+	    					<th>Contact No</th>
+	    					<th style="min-width:100px">Role</th>
+	    					<th>CNIC</th>
+	    					<th></th>
+	  					</tr>
+	  					<tr>
+						    <td>Ahmad Khan</td>
+						    <td>Ahmad Khan</td>
+						    <td>abc@gmail.com</td>
+						    <td>IMSciences, E-5, Phase 7, Hayatabad, Peshawar</td>
+						    <td>0300-0000000</td>
+						    <td>CEO</td>
+						    <td>17101-0000000-0</td>
+						    <td><a href="">Edit/Delete</a></td>
+						</tr>
+					</table>
+				</div>
+  			</div>
+  		</button>
+
+	</div>
+</div>
+
+ <!--Main Page Ends Here-->
+
+
+ <!-- Modal Starts Here-->
+
+  <!--Add Member The Modal -->
+  <div  class="modal fade" id="Modalmember">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header login-header">
+          	<h4 class="modal-title">Add Member</h4>
+          	<button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          	<input type="text" placeholder="Name">
+          	<input type="text" placeholder="Father Name">
+          	<input type="text" placeholder="Email">
+          	<input type="text" placeholder="Address">
+          	<input type="text" placeholder="Contact No">
+          	<input type="text" placeholder="Role">
+          	<input type="text" placeholder="CNIC">
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          	<button type="button" class="btn btn-primary" data-dismiss="modal" id="exit">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="save">Save</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<!--Add Member Modal Ends Here-->
+
+</body>
+</html>

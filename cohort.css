@@ -1,0 +1,284 @@
+/*Desktop Sidebad Starts here*/
+
+.sidenav {
+  height: 100%;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  background-color: rgb(14,26,52);
+  overflow-x: hidden; 
+  padding-top: 20px;
+  
+}
+#list{
+    list-style: none;
+    font-size: 20px;
+}
+.sidenav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 28px 20px;
+  margin-left: -40px;
+  border-bottom: 1px solid #0d172e;
+  border-top: 1px solid #0d172e;
+  color: #ffffff;
+  padding-right: 50px;
+
+}
+.sidenav i {
+    margin-right: 15px;
+    color: #5584ff;
+}
+.sidenav .active a {
+    background: #122143;
+    border-left: 5px solid #5584ff;
+    padding-left: 15px;
+}
+.sidenav a:hover {
+    background: #122143 none repeat scroll 0 0;
+    border-left: 5px solid #5584ff;
+    display: block;
+    padding-left: 15px;
+}
+
+/*Desktop Sidebad Ends here*/
+
+
+/*Medium Sidebad Starts here*/
+@media screen and (max-width:1199px) {
+  #list{
+      font-size: 17px;
+  }
+  .sidenav a {
+    font-size: 15px;
+    padding: 28px 10px;
+  }   
+}
+
+/*Medium Sidebad Ends here*/
+
+/*Small Sidebad Starts here*/
+
+@media screen and (max-width:767px) {
+  #list{
+      font-size: 23px;
+  }
+  #list a{
+      font-size: 0px;
+  }
+  .sidenav a {
+    padding: 28px 20px;
+  }
+}
+
+/*Small Sidebad Ends here*/
+
+/*Mobile Sidebar Starts here*/
+@media screen and (max-width:575px) {
+  #list{
+      font-size: 20px;
+  }
+  .sidenav a {
+    padding: 24px 0px;
+  }
+  .sidenav i {
+      margin-left: 10px;
+  }
+}
+
+/*Mobile Sidebar Ends here*/
+
+
+/*Manage Cohort - Heading and Button - Start*/
+#manage1{
+    color: #0e1a35;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 260px;
+}
+
+#add_cohort1 {
+  width:140px;
+  margin-bottom: 5px;
+  margin-left: 415px;
+}
+
+@media screen and (max-width:1199px) {
+  #manage1{
+    margin-left: 240px;
+  }
+  #add_cohort1 {
+    width:140px;
+    margin-bottom: 5px;
+    margin-left: 295px;
+  }
+}
+
+@media screen and (max-width:991px) {
+
+  #manage1{
+    font-size: 25px;
+    margin-left: 190px;
+  }
+  #add_cohort1 {
+    margin-left: 200px;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  #manage1{
+    font-size: 20px;
+    margin-left: 140px;
+  }
+  #add_cohort1 {
+    margin-bottom: 5px;
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  #manage1{
+    margin-left: 65px;
+  }
+  #add_cohort1{
+
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+}
+
+/*Manage Cohort - Heading and Button - End*/
+
+
+/*Cohort Button Start*/
+#main {
+  margin-left: 170px;
+  padding: 40px 90px;
+}
+#desktopButton{
+  width: 600px ;
+  border-color: black;
+}
+#btn-ed-del{
+    display: inline-block;
+}
+#btn-edit{
+  margin-left: 35px;
+}
+#btn-del{
+  margin-left: 10px;
+}
+
+@media screen and (max-width:1199px) {
+  #main {
+    margin-left: 150px;
+  }
+  #desktopButton{
+    width: 480px ;
+  }
+}
+
+@media screen and (max-width:991px) {
+  #main {
+    margin-left: 100px;
+    padding: 40px 90px;
+  }
+  #desktopButton{
+    width: 350px ;
+    border-color: black;
+  }
+  #desktopButton table{
+    width: 320px
+  }
+}
+
+@media screen and (max-width:767px) {
+  #main{
+    margin-left: 80px;
+    padding: 40px 90px;
+  } 
+  #desktopButton{
+    width: 230px ;
+  }
+  #btn-ed-del{
+    display: block;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  #main {
+    padding: 40px 20px;
+  }
+  #desktopButton{
+    width: 230px ;
+    border-color: black;
+    margin-left: 10px;
+  }
+  #desktopButton table{
+    width: 200px;
+  }
+  #btn-ed-del{
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+/*Cohort Button End*/
+
+/*Modal Starts Here*/
+
+.close, .close:focus, .close:hover {
+    color: #fff;;
+    opacity: 1;
+    text-shadow: none;
+
+}
+.modal-body input {
+    border: 1px solid #d4d9e3;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px 0;
+    padding: 14px 10px;
+    width: 100%;
+    color: #8492af;
+
+}
+.modal-body textarea {
+    border: 1px solid #d4d9e3;
+    font-size: 14px;
+    font-weight: 300;
+    height: 200px;
+    margin-top: 5px;
+    padding: 9px 10px;
+    width: 100%;
+    color: #8492af;
+}
+
+.modal-header {
+    background-color:#0E1A35 ;
+    color: white;
+
+}
+
+#exit{
+  background-color: rgb(14,26,52); 
+  color: white;
+}
+#save{
+  background-color: rgb(0,123,252); 
+  color: white;
+}
+
+.modal{
+    top: 20%; 
+}
+.modal-header .close {
+    margin-top: 2px;
+}
